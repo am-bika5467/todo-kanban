@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="main-container">
+        <div class="card-col" id="todo">
+            <h2>To Do</h2>
+            <div class="task-col" id="todo-tasks"></div>
+            <input type="text" 
+                class="task-input"
+                id="todo-input"
+                placeholder="Add a task"
+            />
+            <button class="add-task" onclick="addItem('todo')">Add a Task</button>
+
+        </div>
+        <div class="card-col" id="doing">
+            <h2>Doing</h2>
+            <div class="task-col" id="doing-tasks"></div>
+            <input type="text" 
+                class="task-input" 
+                id="doing-input" 
+                placeholder="Add a task" 
+            />
+            <button class="add-task" onclick="addItem('doing')"> Add a Task</button>
+
+        </div>
+        <div class="card-col" id="done">
+            <h2>Done</h2>
+            <div class="task-col" id="done-tasks"></div>
+            <input type="text" 
+                class="task-input" 
+                id="done-input". 
+                placeholder="Add a task" 
+            />
+            <button class="add-task"onclick="addItem('done')">Add a Task</button>
+
+        </div>
+    </div>
+    <div class="context-menu ">
+        <ul>
+            <li onclick="editTaskItem()">Edit</li>
+            <li onclick="deleteTaskItem()">Delete</li>
+        </ul>
+    </div>
+    <script src="/script.js"></script>
+</body>
+
+</html>

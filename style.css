@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Comic+Relief:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Comic Relief", system-ui;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #1e293b;
+
+}
+
+.main-container {
+    display: flex;
+    gap: 45px;
+}
+
+.card-col {
+    background-color: #334155;
+
+    width: 400px;
+    min-height: 550px;
+    padding: 20px;
+    /* text-align: center; */
+    border-radius: 2%;
+    color: #f1f5f9;
+
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.task-col {
+    min-height: 500px;
+}
+
+.task-input {
+    width: 100%;
+    padding: 10px 5px;
+    border-radius: 2px;
+    border: 1px solid #ccc;
+    margin-top: 10px;
+    border: none;
+}
+
+.add-task {
+    width: 100%;
+    padding: 10px 5px;
+    border-radius: 2px;
+    border: none;
+    background-color: yellow;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.add-task:hover {
+    background-color: rgb(187, 187, 25);
+    transform: translateY(-4px);
+}
+
+.card {
+    background-color: #ddce6e;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 3%;
+    color: black;
+    cursor: grab;
+}
+
+.context-menu {
+    position: absolute;
+    display: none;
+    background-color: wheat;
+    padding: 10px 0px;
+    border-radius: 5px;
+}
+
+.context-menu  ul li {
+    list-style: none;
+    padding: 7px 20px;
+    cursor: pointer;
+    color: #333;
+}
+
+.time{
+    text-align: end;
+    /* display: block ; */
+    font-style:normal;
+    color: black;
+}
